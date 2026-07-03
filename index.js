@@ -57,10 +57,12 @@ bookStore.books.forEach((book) => {
   const bookAuthor = document.createElement("p");
   const bookImage = document.createElement("img");
 
+
   bookTitle.textContent = book.title;
   bookAuthor.textContent = book.author;
   bookImage.src = book.imageUrl;
   bookImage.alt = book.title;
+
 
   bookContainer.append(bookTitle);
   bookContainer.append(bookAuthor);
@@ -68,6 +70,7 @@ bookStore.books.forEach((book) => {
 
   bookList.append(bookContainer);
 });
+
 
 const deleteElement = document.getElementById("delete-this");
 
